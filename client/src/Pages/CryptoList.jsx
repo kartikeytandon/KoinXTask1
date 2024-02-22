@@ -9,7 +9,7 @@ const CryptoList = () => {
   useEffect(() => {
     const fetchCryptos = async () => {
       try {
-        const response = await axios.get('http://localhost:8000/crypto'); 
+        const response = await axios.get('https://koinx1.onrender.com/crypto'); 
         setCryptos(response.data);
       } catch (error) {
         console.error('Error fetching cryptocurrency data:', error);
